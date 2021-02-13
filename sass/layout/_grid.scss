@@ -1,0 +1,14 @@
+.grid {
+    display: flex;
+    justify-content: center;
+
+    .row {
+        position: absolute;
+        max-width: 150rem;
+        margin: 2rem;
+
+        .col-1-of-3 {
+            display: flex;
+        }
+    }
+}
