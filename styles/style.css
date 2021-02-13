@@ -50,6 +50,53 @@ body {
     color: #246ddb;
     font-size: 1.3rem; }
 
+.grid {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -40rem; }
+  .grid .row {
+    position: absolute;
+    max-width: 150rem;
+    margin: 2rem; }
+    .grid .row .col-1-of-3 {
+      display: flex; }
+
+@media only screen and (max-width: 915px) {
+  .col-1-of-3 {
+    flex-direction: column;
+    max-width: 50rem; } }
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 70rem; }
+  .header__text {
+    position: absolute;
+    text-align: center;
+    color: #000;
+    margin-top: 8rem; }
+    .header__text--main {
+      font-size: 6rem;
+      margin-bottom: 2rem; }
+    .header__text--sub, .header__text--sub:visited {
+      font-size: 2.5rem;
+      color: #000; }
+  .header__img {
+    max-width: calc(150rem + (2rem * 2));
+    width: 100%;
+    background-image: linear-gradient(0deg, #eef5f7 0%, #eef5f7 10%, transparent 70%), url(../public/kitchen_promo_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center; }
+
+@media only screen and (max-width: 915px) {
+  .header__text {
+    margin-top: 5rem; }
+    .header__text--main {
+      font-size: 5rem; } }
+
 .navbar {
   padding: 1.2rem;
   display: flex;
@@ -133,18 +180,3 @@ body {
     display: none; }
   .navbar-secondary__links:not(:first-child) {
     display: none; } }
-
-.grid {
-  display: flex;
-  justify-content: center; }
-  .grid .row {
-    position: absolute;
-    max-width: 150rem;
-    margin: 2rem; }
-    .grid .row .col-1-of-3 {
-      display: flex; }
-
-@media only screen and (max-width: 915px) {
-  .col-1-of-3 {
-    flex-direction: column;
-    max-width: 50rem; } }

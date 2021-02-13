@@ -1,10 +1,12 @@
 .grid {
     display: flex;
     justify-content: center;
+    position: relative;
+    margin-top: -40rem;
 
     .row {
         position: absolute;
-        max-width: 150rem;
+        max-width: $max-width;
         margin: 2rem;
 
         .col-1-of-3 {

@@ -1,0 +1,51 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 70rem;
+
+    &__text {
+        position: absolute;
+        text-align: center;
+        color: $color-black;
+        margin-top: 8rem;
+
+        &--main {
+            font-size: 6rem;
+            margin-bottom: 2rem;
+        }
+
+        &--sub,
+        &--sub:visited {
+            font-size: 2.5rem;
+            color: $color-black;
+        }
+    }
+
+    &__img {
+        max-width: calc(#{$max-width} + (#{$column-gap} * 2));
+        width: 100%;
+        background-image: linear-gradient(
+                0deg,
+                rgba(rgb(238, 245, 247), 1) 0%,
+                rgba(rgb(238, 245, 247), 1) 10%,
+                transparent 70%
+            ),
+            url(../public/kitchen_promo_2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+@media only screen and (max-width: 915px) {
+    .header {
+        &__text {
+            margin-top: 5rem;
+
+            &--main {
+                font-size: 5rem;
+            }
+        }
+    }
+}
