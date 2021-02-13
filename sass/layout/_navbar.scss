@@ -94,3 +94,22 @@
         cursor: pointer;
     }
 }
+
+@media only screen and (max-width: 915px) {
+    .navbar {
+        &__links:not(:last-child) {
+            visibility: hidden;
+            justify-content: space-between;
+        }
+
+        &__search {
+            display: none;
+        }
+    }
+
+    .navbar-secondary {
+        &__links:not(:first-child) {
+            display: none;
+        }
+    }
+}

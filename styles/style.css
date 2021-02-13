@@ -125,6 +125,15 @@ body {
   .navbar-secondary__links {
     cursor: pointer; }
 
+@media only screen and (max-width: 915px) {
+  .navbar__links:not(:last-child) {
+    visibility: hidden;
+    justify-content: space-between; }
+  .navbar__search {
+    display: none; }
+  .navbar-secondary__links:not(:first-child) {
+    display: none; } }
+
 .grid {
   display: flex;
   justify-content: center; }
@@ -134,3 +143,8 @@ body {
     margin: 2rem; }
     .grid .row .col-1-of-3 {
       display: flex; }
+
+@media only screen and (max-width: 915px) {
+  .col-1-of-3 {
+    flex-direction: column;
+    max-width: 50rem; } }
